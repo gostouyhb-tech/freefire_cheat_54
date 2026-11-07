@@ -7,6 +7,10 @@ android {
     namespace 'com.bench.ffcheat'
     compileSdk 35
 
+    buildFeatures {
+        aidl = true
+    }
+
     defaultConfig {
         applicationId "com.bench.ffcheat"
         minSdk 31
