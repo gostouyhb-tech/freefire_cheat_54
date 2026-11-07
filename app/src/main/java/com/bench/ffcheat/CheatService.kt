@@ -31,7 +31,7 @@ class CheatService : Service() {
         ComponentName(packageName, MemoryUserService::class.java.name)
     ).processNameSuffix("memory").debuggable(false).version(1)
 
-    private val userSvcConn = object : Shizuku.UserServiceConnection {
+    private val userSvcConn: Shizuku.UserServiceConnection = object : Shizuku.UserServiceConnection {
         override fun onServiceConnected(name: ComponentName, binder: IBinder) {
             svc = IMemoryService.Stub.asInterface(binder)
             val dm = DisplayMetrics()
