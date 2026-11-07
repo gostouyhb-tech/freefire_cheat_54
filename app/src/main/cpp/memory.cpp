@@ -3,6 +3,7 @@
 #include <cstring>
 #include <fcntl.h>
 #include <unistd.h>
+#include <cstdlib>
 #include <sys/uio.h>
 #include <dirent.h>
 
